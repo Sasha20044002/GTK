@@ -26,6 +26,7 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+  margin: 0 0 32px 0;
 }
 
 .header-logo {
@@ -73,5 +74,60 @@
 
 .header-contact .tel {
   margin: 0 24px 0 0;
+}
+
+.main .general {
+  display: block;
+  width: 61.05417%;
+  margin: 0 auto;
+  background: #FCBD14;
+  border-radius: 15px;
+  padding: 30px 60px;
+  position: relative;
+}
+
+.main .general-title {
+  color: white;
+  line-height: 53px;
+  font-size: 42px;
+  font-weight: normal;
+  font-family: "Stapel Medium", sans-serif;
+  display: block;
+  width: 539px;
+  margin: 0 0 15px 0;
+}
+
+.main .general-text {
+  color: white;
+  line-height: 30px;
+  font-size: 24px;
+  font-weight: normal;
+  font-family: "Stapel", sans-serif;
+  display: block;
+  width: 448px;
+  margin: 0 0 80px 0;
+}
+
+.main .general-btn {
+  color: white;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Stapel", sans-serif;
+  text-decoration: none;
+  background: #2FA56C;
+  display: block;
+  width: 100px;
+  border-radius: 10px;
+  padding: 10px 49px;
+}
+
+.main .general-human {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 /*# sourceMappingURL=index.css.map */

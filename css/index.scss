@@ -4,6 +4,8 @@ $h: 100%;
 //color
 $white: white;
 $black: black;
+$yellow: #FCBD14;
+$green: #2FA56C;
 $c1: #436591;
 $c2: #000;
 //fonts
@@ -43,6 +45,7 @@ $M: 'Montserrat';
     display: flex;
     align-items: center;
     margin: 0 auto;
+    margin: 0 0 32px 0;
 
     &-logo {
         margin: 0 ($w - 95.1500732%) 0 ($w - 88.2869693%);
@@ -78,6 +81,51 @@ $M: 'Montserrat';
 
         .tel {
             margin: 0 24px 0 0;
+        }
+    }
+}
+
+.main {
+    .general {
+        display: block;
+        width: ($w - 38.9458272%);
+        margin: 0 auto;
+        background: $yellow;
+        border-radius: 15px;
+        padding: 30px 60px;
+        position: relative;
+
+        &-title {
+            @include txt($white, 53px, 42px, normal, $Sm);
+            display: block;
+            width: 539px;
+            margin: 0 0 15px 0;
+        }
+
+        &-text {
+            @include txt($white, 30px, 24px, normal, $S);
+            display: block;
+            width: 448px;
+            margin: 0 0 80px 0;
+        }
+
+        &-btn {
+            @include txt($white, 23px, 18px, normal, $S);
+            text-decoration: none;
+            background: $green;
+            display: block;
+            width: 100px;
+            border-radius: 10px;
+            padding: 10px 49px;
+        }
+
+        &-human {
+            display: block;
+            max-width: $w;
+            height: auto;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
         }
     }
 }
