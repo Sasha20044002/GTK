@@ -1,4 +1,83 @@
+//size
+$w: 100%;
+$h: 100%;
+//color
+$white: white;
+$black: black;
+$c1: #436591;
+$c2: #000;
+//fonts
+$S: 'Stapel';
+$Sm: 'Stapel Medium';
+$M: 'Montserrat';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+@mixin txt ($color, $line-height, $font-size, $font-weight, $font-family) {
+    color: $color;
+    line-height: $line-height;
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-family: $font-family, sans-serif;
+}
+
+@font-face {
+    font-family: 'Stapel';
+    src: url(../fonts/Stapel_Regular.otf);
+}
+
+@font-face {
+    font-family: 'Stapel Medium';
+    src: url(../fonts/Stapel_Medium.otf);
+}
+
 * {
     padding: 0;
     margin: 0;
+}
+
+.header {
+    height: 74px;
+    background: $c1;
+    box-shadow: 0px -6px 24px $c1;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+
+    &-logo {
+        margin: 0 ($w - 95.1500732%) 0 ($w - 88.2869693%);
+    }
+
+    &-nav {
+        margin: 0 ($w - 93.704246%) 0 0;
+
+        &-list {
+            list-style-type: none;
+            display: flex;
+
+            &-item {
+                &-link {
+                    @include txt(white, 17px, 14px, normal, $M);
+                    text-decoration: none;
+                }
+
+                &:not(:last-child) {
+                    margin: 0 24px 0 0;
+                }
+            }
+        }
+    }
+
+    &-contact {
+        display: flex;
+
+        a {
+            @include txt(white, 17px, 14px, 600, $M);
+            text-decoration: none;
+        }
+
+        .tel {
+            margin: 0 24px 0 0;
+        }
+    }
 }

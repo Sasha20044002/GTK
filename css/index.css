@@ -1,5 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+@font-face {
+  font-family: 'Stapel';
+  src: url(../fonts/Stapel_Regular.otf);
+}
+
+@font-face {
+  font-family: 'Stapel Medium';
+  src: url(../fonts/Stapel_Medium.otf);
+}
+
 * {
   padding: 0;
   margin: 0;
+}
+
+.header {
+  height: 74px;
+  background: #436591;
+  -webkit-box-shadow: 0px -6px 24px #436591;
+          box-shadow: 0px -6px 24px #436591;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.header-logo {
+  margin: 0 4.84993% 0 11.71303%;
+}
+
+.header-nav {
+  margin: 0 6.29575% 0 0;
+}
+
+.header-nav-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-nav-list-item-link {
+  color: white;
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+.header-nav-list-item:not(:last-child) {
+  margin: 0 24px 0 0;
+}
+
+.header-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-contact a {
+  color: white;
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+.header-contact .tel {
+  margin: 0 24px 0 0;
 }
 /*# sourceMappingURL=index.css.map */
