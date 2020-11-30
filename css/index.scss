@@ -6,8 +6,14 @@ $white: white;
 $black: black;
 $yellow: #FCBD14;
 $green: #2FA56C;
+$blue: #2389CA;
+$red: #ED6E44;
 $c1: #436591;
-$c2: #000;
+$c2: #1F2630;
+$c3: #7A8698;
+$c4: #7DBCE4;
+$c5: #E1E7EF;
+$c6:#F8FAFD;
 //fonts
 $S: 'Stapel';
 $Sm: 'Stapel Medium';
@@ -44,15 +50,11 @@ $M: 'Montserrat';
     box-shadow: 0px -6px 24px $c1;
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    justify-content: center;
     margin: 0 0 32px 0;
 
-    &-logo {
-        margin: 0 ($w - 95.1500732%) 0 ($w - 88.2869693%);
-    }
-
     &-nav {
-        margin: 0 ($w - 93.704246%) 0 0;
+        margin: 0 ($w - 93.704246%) 0 ($w - 95.1500732%);
 
         &-list {
             list-style-type: none;
@@ -89,7 +91,7 @@ $M: 'Montserrat';
     .general {
         display: block;
         width: ($w - 38.9458272%);
-        margin: 0 auto;
+        margin: 32px auto 42px;
         background: $yellow;
         border-radius: 15px;
         padding: 30px 60px;
@@ -126,6 +128,227 @@ $M: 'Montserrat';
             position: absolute;
             bottom: 0px;
             right: 0px;
+        }
+
+        &-stock {
+            @include txt($c2, 23px, 18px, normal, $S);
+            position: absolute;
+            right: 0px;
+            bottom: -32px;
+        }
+    }
+
+    .rates {
+        background-color: $c6;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 27px 0 56px;
+
+        .title {
+            width: 100%;
+            text-align: center;
+            // margin: 0 0 56px 0;
+        }
+
+        input[name=field] {
+            display: none;
+        }
+
+        input[name=field]+label {
+            display: inline-block;
+            @include txt($c3, 18px, 14px, normal, $S);
+            padding: 0 0 10px 0;
+            border-bottom: 2px solid #E1E7EF;
+
+            &:not(:last-child) {
+                margin: 0 32px 0 0;
+            }
+
+            &:hover {
+                color: $c2;
+                border-bottom: 2px solid $c4;
+                transition: all 0.2s;
+            }
+        }
+
+        input[name=field]:checked+label {
+            color: $c2;
+            border-bottom: 2px solid $c4;
+        }
+
+        // sw1
+        #sw1:checked~.stb {
+            display: flex;
+        }
+
+        #sw1:checked~.len {
+            display: none;
+        }
+
+        #sw1:checked~.rate {
+            display: none;
+        }
+
+        // sw2
+        #sw2:checked~.stb {
+            display: none;
+        }
+
+        #sw2:checked~.len {
+            display: flex;
+        }
+
+        #sw2:checked~.rate {
+            display: none;
+        }
+
+        // sw3
+        #sw3:checked~.stb {
+            display: none;
+        }
+
+        #sw3:checked~.len {
+            display: none;
+        }
+
+        #sw3:checked~.rate {
+            display: flex;
+        }
+
+        .stb,
+        .len,
+        .rate {
+            display: flex;
+            justify-content: center;
+            margin: 56px 0 0 0;
+
+            .block {
+                background-color: $white;
+                width: 205px;
+                border: 1px solid $c5;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                padding: 15px 18px 13px;
+                position: relative;
+
+                &-title {
+                    @include txt($c2, 40px, 32px, normal, $S);
+                    width: 100%;
+                    text-align: center;
+                    margin: 0 auto 9px;
+                }
+
+                &-text {
+                    @include txt($c2, 15px, 12px, bormal, $S);
+                    width: 204px;
+                    height: 60px;
+                    text-align: left;
+                    margin: 15px auto 36px;
+                }
+
+                &-connect {
+                    width: 204px;
+                    margin: 0 auto 21px;
+                    @include txt($c3, 18px, 14px, normal, $S);
+
+                    .left {
+                        float: left;
+                    }
+
+                    .right {
+                        float: right;
+                        color: $c2;
+                    }
+                }
+
+                &-speed {
+                    width: 204px;
+                    margin: 0 auto 24px;
+                    @include txt($c3, 18px, 14px, normal, $S);
+
+                    .left {
+                        float: left;
+                    }
+
+                    .right {
+                        float: right;
+                        color: $c2;
+                    }
+                }
+
+                &-price1 {
+                    @include txt($c2, 30px, 24px, 500, $Sm);
+                    width: $w;
+                    margin: 17px 0 0 0;
+                    text-align: left;
+                }
+
+                &-price2 {
+                    @include txt($c3, 18px, 14px, normal, $S);
+                    margin: 0 0 20px 0;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+
+                    .left {
+                        float: left;
+                    }
+
+                    .right {
+                        float: right;
+                        font-size: 8px;
+                        line-height: 10px;
+                    }
+                }
+
+                &-btn {
+                    @include txt($white, 23px, 18px, normal, $S);
+                    text-decoration: none;
+                    background: $green;
+                    display: block;
+                    margin: 0 auto;
+                    border-radius: 10px;
+                    padding: 10px 19px;
+                }
+
+                .line {
+                    color: $c5;
+                }
+
+
+                &:not(:last-child) {
+                    margin: 0 61px 0 0;
+                }
+
+                &::before {
+                    content: '.';
+                    color: $yellow;
+                    width: 240px;
+                    height: 9px;
+                    background-color: $yellow;
+                    border-radius: 5px 5px 0 0;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                }
+            }
+
+            .block:nth-child(2) {
+                box-shadow: 0px 25px 25px 2px rgba(0, 0, 0, 0.1);
+
+                &::before {
+                    background-color: $blue;
+                }
+            }
+
+            .block:nth-child(3) {
+
+                &::before {
+                    background-color: $red;
+                }
+            }
         }
     }
 }
