@@ -661,4 +661,178 @@
   bottom: 0;
   right: 0;
 }
+
+.main .form {
+  width: 761px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 0 0 12%;
+  padding: 35px 0 21px;
+}
+
+.main .form .title {
+  width: 100%;
+  color: #1F2630;
+  line-height: 40px;
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "Stapel Medium", sans-serif;
+  text-align: left;
+  margin: 0 0 42px 0;
+}
+
+.main .form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main .form label {
+  color: #1F2630;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Stapel", sans-serif;
+}
+
+.main .form input[type=nubmber],
+.main .form input[type=text],
+.main .form input[type=tel],
+.main .form input[type=email] {
+  border: none;
+  border-bottom: 1px solid #7DBCE4;
+  margin: 10px 0 0 0;
+}
+
+.main .form input:active,
+.main .form input:hover,
+.main .form input:focus {
+  outline: 0;
+  outline-offset: 0;
+  border-bottom: 1px solid #2389CA;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.main .form .name {
+  width: 460px;
+  margin: 0 40px 32px 0;
+}
+
+.main .form .street {
+  width: 260px;
+}
+
+.main .form .tel {
+  width: 160px;
+  margin: 0 40px 39px 0;
+}
+
+.main .form .email {
+  width: 260px;
+  margin: 0 40px 0 0;
+}
+
+.main .form .home {
+  width: 60px;
+  margin: 0 40px 0 0;
+}
+
+.main .form .flat {
+  width: 60px;
+}
+
+.main .form .text {
+  width: 100%;
+  color: #1F2630;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Stapel", sans-serif;
+  margin: 0 0 21px 0;
+}
+
+.main .form input[id=text] {
+  margin: 10px 11px 0 0;
+}
+
+.main .form label[for=text] {
+  color: #7A8698;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Stapel", sans-serif;
+}
+
+.main .form label[for=text]:not(:last-child) {
+  margin: 0 25px 0 0;
+}
+
+.main .form label[for=text] b {
+  color: #1F2630;
+}
+
+.main .form .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 44px 0 0 0;
+}
+
+.main .form .bottom label {
+  width: 371px;
+  -webkit-box-ordinal-group: -1;
+      -ms-flex-order: -2;
+          order: -2;
+}
+
+.main .form .bottom .btn {
+  color: white;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Stapel", sans-serif;
+  display: block;
+  background-color: #2FA56C;
+  border-radius: 10px;
+  padding: 10px 19px;
+  border: none;
+  margin: 0 44px 0 0;
+  opacity: 0.5;
+  pointer-events: none;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.main .form .bottom input[name=text] {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+}
+
+.main .form .bottom input[name=text]:checked ~ .btn {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.main .form .bottom #text {
+  margin: 0 9px 0 0;
+  width: 18px;
+  height: 18px;
+}
 /*# sourceMappingURL=index.css.map */
