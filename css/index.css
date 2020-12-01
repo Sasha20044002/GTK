@@ -835,4 +835,129 @@
   width: 18px;
   height: 18px;
 }
+
+.main .all {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 60px 0 55px 0;
+}
+
+.main .all .small,
+.main .all .big,
+.main .all .very-small {
+  position: relative;
+}
+
+.main .all .small img,
+.main .all .big img,
+.main .all .very-small img {
+  position: relative;
+  z-index: -1;
+}
+
+.main .all .small .title,
+.main .all .big .title,
+.main .all .very-small .title {
+  color: white;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: "Stapel Medium", sans-serif;
+  width: 175px;
+  position: absolute;
+  top: 13px;
+  left: 14px;
+}
+
+.main .all .small .text,
+.main .all .big .text,
+.main .all .very-small .text {
+  color: white;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Stapel", sans-serif;
+  width: 246px;
+  position: absolute;
+  top: 85px;
+  left: 14px;
+}
+
+.main .all .small .btn,
+.main .all .big .btn,
+.main .all .very-small .btn {
+  position: absolute;
+  top: 171px;
+  left: 14px;
+}
+
+.main .all .small .btn input[type=checkbox],
+.main .all .big .btn input[type=checkbox],
+.main .all .very-small .btn input[type=checkbox] {
+  display: none;
+}
+
+.main .all .small .btn label,
+.main .all .big .btn label,
+.main .all .very-small .btn label {
+  color: white;
+  line-height: 18px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Stapel", sans-serif;
+  padding: 5px 13px 7px 13.83px;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.main .all .small .btn label::before,
+.main .all .big .btn label::before,
+.main .all .very-small .btn label::before {
+  content: url(../img/arrow-down.svg);
+  margin: 0 7.83px 0 0;
+}
+
+.main .all .small .btn input[type=checkbox]:checked ~ label::before,
+.main .all .big .btn input[type=checkbox]:checked ~ label::before,
+.main .all .very-small .btn input[type=checkbox]:checked ~ label::before {
+  content: url(../img/arrow-up.svg);
+}
+
+.main .all .small .btn .content,
+.main .all .big .btn .content,
+.main .all .very-small .btn .content {
+  position: absolute;
+  top: -200%;
+  left: -10%;
+}
+
+.main .all .small .btn .content .text,
+.main .all .big .btn .content .text,
+.main .all .very-small .btn .content .text {
+  width: 246px;
+  color: white;
+  line-height: 10px;
+  font-size: 8px;
+  font-weight: normal;
+  font-family: "Stapel", sans-serif;
+}
+
+.main .all .small .btn #switch1:checked ~ div,
+.main .all .big .btn #switch1:checked ~ div,
+.main .all .very-small .btn #switch1:checked ~ div {
+  background-color: none;
+}
+
+.main .all .very-small .text {
+  position: absolute;
+  top: 75px;
+}
+
+.main .all .big {
+  margin: 0 45px;
+}
 /*# sourceMappingURL=index.css.map */

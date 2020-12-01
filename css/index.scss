@@ -656,4 +656,91 @@ $M: 'Montserrat';
             }
         }
     }
+
+    .all {
+        display: flex;
+        justify-content: center;
+        padding: 60px 0 55px 0;
+
+        .small,
+        .big,
+        .very-small {
+            position: relative;
+
+            img {
+                position: relative;
+                z-index: -1;
+            }
+
+            .title {
+                @include txt($white, 23px, 18px, 500, $Sm);
+                width: 175px;
+                position: absolute;
+                top: 13px;
+                left: 14px;
+            }
+
+            .text {
+                @include txt($white, 20px, 16px, normal, $S);
+                width: 246px;
+                position: absolute;
+                top: 85px;
+                left: 14px;
+            }
+
+            .btn {
+                position: absolute;
+                top: 171px;
+                left: 14px;
+
+
+                input[type=checkbox] {
+                    display: none;
+                }
+
+                label {
+                    @include txt($white, 18px, 14px, normal, $S);
+                    padding: 5px 13px 7px 13.83px;
+                    border-radius: 10px;
+                    border: 1px solid $white;
+
+                    &::before {
+                        content: url(../img/arrow-down.svg);
+                        margin: 0 7.83px 0 0;
+                    }
+                }
+
+                input[type=checkbox]:checked~label::before {
+                    content: url(../img/arrow-up.svg);
+                }
+
+                .content {
+                    position: absolute;
+                    top: -200%;
+                    left: -10%;
+
+                    .text {
+                        width: 246px;
+                        @include txt($white, 10px, 8px, normal, $S);
+                    }
+                }
+
+                #switch1:checked~div {
+                    background-color: none;
+                }
+            }
+
+        }
+
+        .very-small {
+            .text {
+                position: absolute;
+                top: 75px;
+            }
+        }
+
+        .big {
+            margin: 0 45px;
+        }
+    }
 }
