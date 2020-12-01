@@ -445,4 +445,52 @@
 .main .rates .rate .block:nth-child(3)::before {
   background-color: #ED6E44;
 }
+
+.main .desc {
+  position: relative;
+}
+
+.main .desc .blue {
+  position: absolute;
+  top: -31%;
+  left: 0;
+}
+
+.main .desc .text {
+  color: white;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Stapel", sans-serif;
+  width: 455px;
+  margin: 79px 0 48px 28%;
+  position: relative;
+}
+
+.main .desc .before::before {
+  content: url(../img/orange.svg);
+  position: absolute;
+  top: -30px;
+  left: -83px;
+  z-index: -1;
+}
+
+.main .desc .text:last-child {
+  color: #1F2630;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  font-family: "Stapel", sans-serif;
+  width: 560px;
+  margin: 0 0 45px 22%;
+  position: relative;
+}
+
+.main .desc .text:last-child::after {
+  content: url(/img/yellow.svg);
+  position: absolute;
+  top: -18.18px;
+  right: -206px;
+  z-index: -1;
+}
 /*# sourceMappingURL=index.css.map */

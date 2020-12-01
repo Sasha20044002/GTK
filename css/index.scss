@@ -351,4 +351,45 @@ $M: 'Montserrat';
             }
         }
     }
+
+    .desc {
+        position: relative;
+
+        .blue {
+            position: absolute;
+            top: -31%;
+            left: 0;
+        }
+
+        .text {
+            @include txt($white, 23px, 18px, normal, $S);
+            width: 455px;
+            margin: 79px 0 48px 28%;
+            position: relative;
+
+        }
+
+        .before::before {
+            content: url(../img/orange.svg);
+            position: absolute;
+            top: -30px;
+            left: -83px;
+            z-index: -1;
+        }
+
+        .text:last-child {
+            @include txt($c2, 23px, 18px, normal, $S);
+            width: 560px;
+            margin: 0 0 45px 22%;
+            position: relative;
+
+            &::after {
+                content: url(/img/yellow.svg);
+                position: absolute;
+                top: -18.18px;
+                right: -206px;
+                z-index: -1;
+            }
+        }
+    }
 }
