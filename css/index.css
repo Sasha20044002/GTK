@@ -960,4 +960,110 @@
 .main .all .big {
   margin: 0 45px;
 }
+
+.footer {
+  height: 253px;
+  background-color: #436591;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer-logo-img {
+  margin: 0 0 21.41px 0;
+}
+
+.footer-logo .copyright {
+  color: white;
+  line-height: 15px;
+  font-size: 12px;
+  font-weight: normal;
+  font-family: "Stapel", sans-serif;
+}
+
+.footer-contacts {
+  width: 220px;
+  margin: 0 2.5% 0 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer-contacts span,
+.footer-contacts a {
+  color: white;
+  line-height: 18px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Stapel", sans-serif;
+}
+
+.footer-contacts .title {
+  display: block;
+  width: 270px;
+  margin: 0 0 21px 0;
+}
+
+.footer-contacts .contact-title {
+  width: 100%;
+  margin: 0 0 15px 0;
+}
+
+.footer-contacts .tel {
+  margin: 0 12px 7px 0;
+  text-decoration: none;
+}
+
+.footer-contacts .email {
+  text-decoration: none;
+}
+
+.footer-contacts .margin {
+  margin: 0 0 25px 0;
+}
+
+.footer-nav {
+  margin: 165px 6.29575% 0 4.84993%;
+}
+
+.footer-nav-list {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-nav-list-item-link {
+  color: white;
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+}
+
+.footer-nav-list-item:not(:last-child) {
+  margin: 0 24px 0 0;
+}
 /*# sourceMappingURL=index.css.map */
