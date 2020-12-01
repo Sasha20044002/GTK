@@ -744,3 +744,81 @@ $M: 'Montserrat';
         }
     }
 }
+
+.footer {
+    height: 253px;
+    background-color: $c1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-img {
+            margin: 0 0 21.41px 0;
+        }
+
+        .copyright {
+            @include txt($white, 15px, 12px, normal, $S);
+        }
+    }
+
+    &-contacts {
+        width: 220px;
+        margin: 0 2.5% 0 52px;
+        display: flex;
+        flex-wrap: wrap;
+
+        span,
+        a {
+            @include txt($white, 18px, 14px, normal, $S);
+        }
+
+        .title {
+            display: block;
+            width: 270px;
+            margin: 0 0 21px 0;
+        }
+
+        .contact-title {
+            width: $w;
+            margin: 0 0 15px 0;
+        }
+
+        .tel {
+            margin: 0 12px 7px 0;
+            text-decoration: none;
+        }
+
+        .email {
+            text-decoration: none;
+        }
+
+        .margin {
+            margin: 0 0 25px 0
+        }
+    }
+
+    &-nav {
+        margin: 165px ($w - 93.704246%) 0 ($w - 95.1500732%);
+
+        &-list {
+            list-style-type: none;
+            display: flex;
+
+            &-item {
+                &-link {
+                    @include txt(white, 17px, 14px, normal, $M);
+                    text-decoration: none;
+                }
+
+                &:not(:last-child) {
+                    margin: 0 24px 0 0;
+                }
+            }
+        }
+    }
+}
